@@ -72,4 +72,7 @@ app.get('/api/images', async (req, res) => {
 
 // Start the server
 const PORT = 4000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+  console.log(`API available at https://bs-polyfill.onrender.com`);
+});
