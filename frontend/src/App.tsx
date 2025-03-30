@@ -16,7 +16,7 @@ const App: React.FC = () => {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const response = await fetch("http://localhost:4000/api/images");
+        const response = await fetch("https://bs-polyfill.onrender.com/api/images");
         if (!response.ok) throw new Error("Failed to fetch images");
         const data: Image[] = await response.json();
         setImages(data);
