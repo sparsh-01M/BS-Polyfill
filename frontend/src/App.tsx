@@ -41,7 +41,7 @@ const App: React.FC = () => {
           <div className="flex justify-between h-16 items-center">
             <div className="flex-shrink-0">
               <h1 className="text-2xl font-bold tracking-wider transform hover:scale-105 transition-transform duration-300">
-                BS Polyfill
+                Mashal Pipes
               </h1>
             </div>
             <div className="hidden md:block">
@@ -123,7 +123,7 @@ const App: React.FC = () => {
                   <div className="relative rounded-lg overflow-hidden shadow-lg border-4 border-transparent group-hover:border-white transition-all duration-700">
                     <img
                       src={project.filePath}
-                      alt={project.title}
+                      alt={`${project.title} logo`}
                       className="w-full h-[300px] md:h-[400px] object-cover rounded-full transition-transform duration-700 group-hover:scale-110 group-hover:rotate-3"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-500 flex items-center justify-center">
@@ -182,16 +182,18 @@ const App: React.FC = () => {
       <section id="about" className="py-20 bg-gray-50 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="transform transition-all duration-500 hover:translate-x-2">
-              <h2 className="text-3xl font-bold mb-6">ABOUT US</h2>
+            <div>
+              <h2 className="text-3xl font-bold mb-6 transform transition-all duration-500 hover:translate-x-2">
+ ABOUT OUR HIGH-QUALITY PVC PIPES AND FITTINGS
+ </h2>
               <p className="text-gray-600 mb-4">
                 Established in 2016, our PVC pipe factory has built a strong
-                reputation for delivering high-quality, durable products. Over
+                reputation for delivering high-quality, durable PVC pipes and fittings. Over
                 the years, we have consistently provided reliable solutions to
                 meet diverse industrial and domestic needs.
               </p>
               <p className="text-gray-600">
-                With 8+ years of experience in the industry, we combine
+ With 8+ years of experience in the pipes and fittings industry, we combine
                 expertise with continuous innovation to manufacture PVC pipes
                 that exceed industry standards.
               </p>
@@ -212,9 +214,9 @@ const App: React.FC = () => {
 <section id="areas-served" className="py-20 bg-white px-4">
   <div className="max-w-7xl mx-auto">
     <div className="text-center mb-12">
-      <h2 className="text-3xl font-bold mb-4">AREAS WE SERVE</h2>
+      <h2 className="text-3xl font-bold mb-4 transform transition-all duration-500 hover:scale-105">AREAS WE SERVE WITH OUR PVC PIPES</h2>
       <p className="text-gray-600">
-        We take pride in delivering high-quality PVC pipes to various regions across India, ensuring durability and excellence in every product.
+ We take pride in delivering high-quality PVC pipes and fittings to various regions across India, ensuring durability and excellence in every product.
       </p>
     </div>
     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -230,7 +232,7 @@ const App: React.FC = () => {
         >
           <img
             src={area.image}
-            alt={area.name}
+ alt={`Map showing the area of ${area.name}`}
             className="w-full h-40 object-cover rounded-2xl mb-4 shadow-lg"
           />
           <h3 className="text-xl font-semibold">{area.name}</h3>
@@ -246,18 +248,18 @@ const App: React.FC = () => {
 <section id="why-us" className="py-20 bg-gray-50 px-4">
   <div className="max-w-7xl mx-auto">
     <div className="text-center mb-12">
-      <h2 className="text-3xl font-bold mb-4">WHY US</h2>
+      <h2 className="text-3xl font-bold mb-4 transform transition-all duration-500 hover:scale-105">WHY CHOOSE OUR PVC PIPES AND FITTINGS</h2>
       <p className="text-gray-600">
-        Discover why our PVC pipes are the preferred choice for numerous customers across India.
+        Discover why our PVC pipes and fittings are the preferred choice for numerous customers across India.
       </p>
     </div>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {[
-        { title: "Best Quality", description: "We ensure top-notch quality with rigorous quality checks at every stage." },
+        { title: "Best Quality Pipes and Fittings", description: "We ensure top-notch quality PVC pipes and fittings with rigorous quality checks at every stage." },
         { title: "Best Market Rate", description: "Our pricing strategy guarantees the best rates without compromising on quality." },
         { title: "Better Customer Support", description: "Our dedicated support team is always ready to assist you." },
         { title: "Eco-Friendly Products", description: "We use sustainable materials and environmentally conscious processes." },
-        { title: "Timely Delivery", description: "Our efficient supply chain ensures that your orders arrive on time, every time." }
+        { title: "Timely Delivery of Pipes and Fittings", description: "Our efficient supply chain ensures that your orders of pipes and fittings arrive on time, every time." }
       ].map((reason, index) => (
         <div
           key={index}
