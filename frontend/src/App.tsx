@@ -90,8 +90,7 @@ const App: React.FC = () => {
       {/* Hero Section */}
       <section id="home" className="relative h-screen">
         <img
-{/*           src={getImageByTitle("Hero")} // Fetch Hero image dynamically */}
-          src = "https://res.cloudinary.com/do5w3vlu0/image/upload/v1743360123/ChatGPT_Image_Mar_31_2025_12_11_50_AM_eftqev.png"
+          src={getImageByTitle("Hero")} // Fetch Hero image dynamically
           alt="Hero"
           className="w-full h-full object-cover"
         />
