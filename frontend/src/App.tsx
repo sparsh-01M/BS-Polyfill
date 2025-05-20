@@ -300,7 +300,7 @@ const App: React.FC = () => {
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-6">
         <div className="max-w-7xl mx-auto text-center">
-          <p>&copy; 2016 BS Polyfill. All Rights Reserved.</p>
+          <p>&copy; 2016 Mashal Pipes. All Rights Reserved.</p>
         </div>
       </footer>
     </div>
